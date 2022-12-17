@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Регистрация</title>
+        <style>
+            .container {
+                text-align: center;
+            }
+
+            fieldset {
+                padding: 90px;
+                margin-top: 100px;
+                margin-left: 40%;
+                margin-right: 40%;
+            }
+
+            span {
+                color: red;
+            }
+
+            button {
+                padding: 10px 50px;
+                background-color: #068922;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <form action="https://fom.in.ua/echo">
+                <div class="container">
+                    <h1>Регистрация</h1>
+                    <p>
+                        Пожалуйста, заполните эту форму, чтобы создать учетную
+                        запись.
+                    </p>
+                    <label for="email"><b>Email</b></label>
+                    <span>*</span>
+                    <input
+                        id="email"
+                        type="text"
+                        placeholder="Введите адрес электронной почты"
+                        name="email"
+                        required />
+
+                    <hr />
+                    <label for="psw"><b>Пароль</b></label>
+                    <span>*</span>
+                    <input
+                        id="psw"
+                        type="password"
+                        placeholder="Введите пароль"
+                        name="psw"
+                        required />
+
+                    <hr />
+                    <label for="psw-repeat"><b>Повторите пароль</b></label>
+                    <span>*</span>
+                    <input
+                        id="psw-repeat"
+                        type="password"
+                        placeholder="Повторите пароль"
+                        name="psw-repeat"
+                        required />
+
+                    <hr />
+                    <button type="submit">Регистрация</button>
+                </div>
+            </form>
+        </fieldset>
+    </body>
+</html>
